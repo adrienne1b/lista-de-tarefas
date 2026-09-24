@@ -34,9 +34,7 @@ src/
 - Abra o VS Code.
 - Clique em **File > Open Folder...** (ou `Arquivo > Abrir Pasta...`).
 - Selecione a pasta do projeto:
-  ```
 
-  ```
 
 ### 2. Abrir o Terminal integrado
 - No VS Code, use o atalho: `Ctrl + '` (ou menu superior **Terminal > New Terminal**).
