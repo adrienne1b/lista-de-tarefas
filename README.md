@@ -35,7 +35,7 @@ src/
 - Clique em **File > Open Folder...** (ou `Arquivo > Abrir Pasta...`).
 - Selecione a pasta do projeto:
   ```
-  C:\Users\Adriene\.gemini\antigravity\scratch\lista-tarefas-angular
+
   ```
 
 ### 2. Abrir o Terminal integrado
