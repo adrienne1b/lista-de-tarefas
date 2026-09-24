@@ -2,60 +2,6 @@
 
 Aplicação simples e didática de lista de tarefas desenvolvida em **Angular**, com foco na prática de componentes, templates, data binding (`[(ngModel)]`), eventos, diretivas e estilização condicional.
 
----
-
-## 📁 Estrutura de Pastas
-
-Para manter tudo organizado e não misturar as informações, os arquivos foram separados por responsabilidade:
-
-```text
-src/
-└── app/
-    ├── models/
-    │   └── tarefa.model.ts               # Interface TypeScript com a estrutura de uma Tarefa
-    │
-    ├── components/
-    │   └── lista-tarefas/
-    │       ├── lista-tarefas.component.ts     # Lógica: lista inicial, adicionar, remover e contador
-    │       ├── lista-tarefas.component.html   # Template: campos, botões, checkboxes e texto
-    │       ├── lista-tarefas.component.css    # Estilos: visual dos cards e texto riscado
-    │       └── lista-tarefas.component.spec.ts# Testes unitários cobrindo todos os requisitos
-    │
-    ├── app.ts                            # Componente raiz da aplicação
-    ├── app.html                          # Template raiz chamando <app-lista-tarefas>
-    └── app.css                           # Estilos específicos do app raiz
-```
-
----
-
-## 🚀 Como abrir e rodar no VS Code
-
-### 1. Abrir a pasta no VS Code
-- Abra o VS Code.
-- Clique em **File > Open Folder...** (ou `Arquivo > Abrir Pasta...`).
-- Selecione a pasta do projeto:
-
-
-### 2. Abrir o Terminal integrado
-- No VS Code, use o atalho: `Ctrl + '` (ou menu superior **Terminal > New Terminal**).
-
-### 3. Rodar a aplicação
-- No terminal, execute:
-  ```bash
-  npm start
-  ```
-- Abra seu navegador no endereço: **http://localhost:4200/**
-
----
-
-## 🧪 Como rodar os testes unitários
-
-Para validar automaticamente que todos os requisitos da atividade estão funcionando:
-```bash
-npm test -- --watch=false
-```
-
----
 
 ## 🎯 Requisitos Implementados
 
