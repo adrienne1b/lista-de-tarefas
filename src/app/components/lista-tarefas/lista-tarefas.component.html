@@ -1,0 +1,45 @@
+<div class="container">
+  <h1>Minhas tarefas</h1>
+
+  <!-- Campo para adicionar nova tarefa -->
+  <div class="input-grupo">
+    <input 
+      type="text" 
+      [(ngModel)]="novaTarefa" 
+      (keyup.enter)="adicionarTarefa()"
+      placeholder="Digite uma nova tarefa..." 
+    />
+    <button type="button" class="btn-adicionar" (click)="adicionarTarefa()">
+      Adicionar
+    </button>
+  </div>
+
+  <!-- Lista de tarefas -->
+  <ul class="lista-tarefas">
+    <li *ngFor="let tarefa of tarefas; let i = index" class="item-tarefa">
+      <div class="tarefa-conteudo">
+        <input 
+          type="checkbox" 
+          [id]="'tarefa-' + i"
+          [(ngModel)]="tarefa.concluida" 
+        />
+        <label [for]="'tarefa-' + i" [class.concluida]="tarefa.concluida">
+          {{ tarefa.descricao }}
+        </label>
+      </div>
+      <button type="button" class="btn-remover" (click)="removerTarefa(i)">
+        Remover
+      </button>
+    </li>
+  </ul>
+
+  <!-- Mensagem se a lista estiver vazia -->
+  <p *ngIf="tarefas.length === 0" class="sem-tarefas">
+    Nenhuma tarefa cadastrada no momento.
+  </p>
+
+  <!-- Contador de tarefas concluídas -->
+  <footer class="contador">
+    <strong>Tarefas concluídas:</strong> {{ totalConcluidas }}
+  </footer>
+</div>
